@@ -1,7 +1,7 @@
 let chart; // store chart reference
 
 document.getElementById("reportSelect").addEventListener("change", (e) => {
-  loadDashboard(`/${e.target.value}`);  // ✅ Correct path for Vercel/public
+  loadDashboard(`/${e.target.value}`); // 👈 Now this gives /biomarkers1.json
 });
 
 function loadDashboard(filePath) {
