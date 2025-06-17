@@ -1,7 +1,7 @@
 let chart; // store chart reference
 
 document.getElementById("reportSelect").addEventListener("change", (e) => {
-  loadDashboard(`public/${e.target.value}`);
+  loadDashboard(`/${e.target.value}`);  // ✅ Correct path for Vercel/public
 });
 
 function loadDashboard(filePath) {
@@ -13,7 +13,9 @@ function loadDashboard(filePath) {
 
       // Update patient info
       document.getElementById("patientInfo").innerHTML =
-        `<strong>Patient:</strong> ${patient.name} | <strong>Age:</strong> ${patient.age} | <strong>Date:</strong> ${patient.date}`;
+        `<strong>Patient:</strong> ${patient.name} | 
+         <strong>Age:</strong> ${patient.age} | 
+         <strong>Date:</strong> ${patient.date}`;
 
       const labels = Object.keys(biomarkers);
       const values = labels.map(k => biomarkers[k].value);
@@ -32,13 +34,12 @@ function loadDashboard(filePath) {
 
       const ctx = document.getElementById("biomarkerChart").getContext("2d");
 
-      // Destroy previous chart if it exists
       if (chart) chart.destroy();
 
       chart = new Chart(ctx, {
         type: "bar",
         data: {
-          labels: labels,
+          labels,
           datasets: [{
             label: "Biomarker Levels",
             data: values,
@@ -73,5 +74,5 @@ function loadDashboard(filePath) {
     });
 }
 
-// ✅ Load initial report
+// ✅ Load initial report on page load
 loadDashboard("/biomarkers1.json");
