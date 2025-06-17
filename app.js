@@ -1,7 +1,7 @@
 let chart; // store chart reference
 
 document.getElementById("reportSelect").addEventListener("change", (e) => {
-  loadDashboard(`static/${e.target.value}`);
+  loadDashboard(`public/${e.target.value}`);
 });
 
 function loadDashboard(filePath) {
