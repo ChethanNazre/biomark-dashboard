@@ -1,11 +1,12 @@
 body {
   font-family: Arial, sans-serif;
   text-align: center;
-  padding: 2rem;
+  padding: 1rem;
   background: #f8f9fa;
 }
 
 canvas {
+  padding: 3rem;
   max-width: 100%;
 }
 
@@ -57,4 +58,4 @@ canvas {
 .container {
   max-width: 900px;
   margin: 0 auto;
-}
+} 
