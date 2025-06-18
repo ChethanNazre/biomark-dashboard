@@ -1,3 +1,15 @@
+<!-- Header -->
+<header class="header">
+  <nav class="navbar">
+    <div class="container">
+      <div class="navbar-brand">
+       
+      </div>
+      <h1>🩺 Biomarker Visualization Dashboard</h1>
+    </div>
+  </nav>
+</header>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -6,11 +18,11 @@
   <title>Biomarker Dashboard</title>
   <link rel="stylesheet" href="style.css" />
 
-
   <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  
 </head>
 <body>
-  <h1>🩺 Biomarker Visualization Dashboard</h1>
+  <br/>
 
   <p id="patientInfo">Loading patient info...</p>
 
@@ -20,7 +32,17 @@
   <option value="biomarkers2.json">Report 2 (May)</option>
   <option value="biomarkers3.json">Report 3 (Sep)</option>
 </select>
+<br/>
   <canvas id="biomarkerChart" width="400" height="200"></canvas>
+  <br/>
   <script src="app.js"></script>
 </body>
 </html>
+
+
+<!-- Footer -->
+<footer class="footer">
+  <div class="container">
+    <p>&copy; EcoTown Health Tech 2025</p>
+  </div>
+</footer>
