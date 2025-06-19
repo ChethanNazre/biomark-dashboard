@@ -1,0 +1,65 @@
+{
+  "patient": {
+    "name": "Dr. B G MANJUNATHA SWAMY",
+    "age": 56,
+    "date": "2025-06-17"
+  },
+  "biomarkers": {
+    "Total Cholesterol": {
+      "value": 200.0,
+      "unit": "mg/dL",
+      "reference_range": "<200",
+      "low": 0,
+      "high": 200
+    },
+    "LDL": {
+      "value": 100.0,
+      "unit": "mg/dL",
+      "reference_range": "<100",
+      "low": 0,
+      "high": 100
+    },
+    "HDL": {
+      "value": 37.0,
+      "unit": "mg/dL",
+      "reference_range": ">40",
+      "low": 40,
+      "high": 100
+    },
+    "Triglycerides": {
+      "value": 3.12,
+      "unit": "mg/dL",
+      "reference_range": "<150",
+      "low": 0,
+      "high": 150
+    },
+    "Creatinine": {
+      "value": 1.09,
+      "unit": "mg/dL",
+      "reference_range": "0.7-1.3",
+      "low": 0.7,
+      "high": 1.3
+    },
+    "Vitamin D": {
+      "value": 24.6,
+      "unit": "ng/mL",
+      "reference_range": "30-100",
+      "low": 30,
+      "high": 100
+    },
+    "Vitamin B12": {
+      "value": 393.0,
+      "unit": "pg/mL",
+      "reference_range": "211-911",
+      "low": 211,
+      "high": 911
+    },
+    "HbA1c": {
+      "value": 5.6,
+      "unit": "%",
+      "reference_range": "<5.7",
+      "low": 0,
+      "high": 5.7
+    }
+  }
+}
