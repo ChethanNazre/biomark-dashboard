@@ -41,6 +41,8 @@ This is a live, dynamic dashboard to visualize biomarker levels for patients bas
 
 ---
 
-## 🙏 Acknowledgements
+## Acknowledgements
 
 Built with an MVP mindset: minimal, functional, and focused on real-world healthcare needs. Submitted as part of the EcoTown Internship Assignment.
+
+Author - Chethan Nazre S
